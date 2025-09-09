@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional | Erwin Rene Ome Bermeo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #d1d5db;
+        }
+        .section-title {
+            color: #f9fafb;
+        }
+
+        /* --- Estilos de la Infografía de Línea de Tiempo --- */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #374151;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: #ef4444;
+            border: 4px solid #f87171;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #1f2937;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #1f2937;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #1f2937;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #1f2937 transparent transparent;
+        }
+        .right::after {
+            left: -14px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: #1f2937;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-container::before {
+                left: 60px;
+                border: medium solid #1f2937;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #1f2937 transparent transparent;
+            }
+            .left::after, .right::after {
+                left: 18px;
+            }
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto max-w-5xl px-6 py-12">
+        
+        <header class="mb-12">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white">ERWIN RENE OME BERMEO</h1>
+                <h2 class="text-lg md:text-xl text-red-400 mt-2">Software Engineer Manager| Agile Coach | Scrum Master | Diseño Organizacional Ágil</h2>
+                <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 mt-6 text-sm">
+                    <a href="mailto:ing.rene.ome@gmail.com" class="flex items-center text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        ing.rene.ome@gmail.com
+                    </a>
+                    <span class="flex items-center text-gray-400">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        +34 602 183 606
+                    </span>
+                    <a href="https://linkedin.com/in/rene-ome-30a54741" target="_blank" class="flex items-center text-gray-400 hover:text-white transition-colors duration-300">
+                       <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="about" class="mb-16">
+                <h3 class="text-2xl font-bold section-title mb-6 border-b-2 border-red-500 pb-2">Perfil Profesional</h3>
+                <p class="text-lg leading-relaxed">
+                    Ingeniero de sistemas con más de 15 años de experiencia, de los cuales 9 años me he especializado en liderar equipos técnicos y transformar organizaciones a través de metodologías ágiles. Mi enfoque combina habilidades de gestión de proyectos y desarrollo de soluciones técnicas, con una fuerte orientación a resultados. Me apasiona promover la mejora continua, impulsar la innovación tecnológica y liderar equipos hacia la entrega de soluciones de software alineadas con los objetivos de negocio.
+                </p>
+            </section>
+            
+            <section id="skills" class="mb-16">
+                <h3 class="text-2xl font-bold section-title mb-8 border-b-2 border-red-500 pb-2">Habilidades Técnicas y de Gestión</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex items-center mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a3.001 3.001 0 015.688 0M12 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                           <h4 class="text-lg font-semibold text-white">Gestión de Proyectos y Equipos</h4>
+                        </div>
+                        <p class="text-sm text-gray-400 flex-grow">Jira, Azure DevOps, Confluence, ClickUp, Notion, Liderazgo, Planificación Estratégica, Gestión de Presupuestos, KPIs y OKRs.</p>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            <h4 class="text-lg font-semibold text-white">Metodologías Ágiles</h4>
+                        </div>
+                        <p class="text-sm text-gray-400 flex-grow">Scrum, SAFe, Kanban, XP, Lean, DevOps.</p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex items-center mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-14L4 7v10l8 4m0-14v10" />
+                            </svg>
+                            <h4 class="text-lg font-semibold text-white">Arquitectura de Software</h4>
+                        </div>
+                        <p class="text-sm text-gray-400 flex-grow">Kafka, API REST, Microservicios, Diseño de Soluciones Técnicas.</p>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0011.667 0l3.181-3.183m-4.991-2.691L7.5 5.952m11.667 0l-3.181 3.183a8.25 8.25 0 01-11.667 0L2.985 5.952" />
+                            </svg>
+                            <h4 class="text-lg font-semibold text-white">DevOps / Integración Continua</h4>
+                        </div>
+                        <p class="text-sm text-gray-400 flex-grow">Jenkins, Git, GitHub, GitLab, SonarQ, Selenium, CI/CD.</p>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7l8-4 8 4" />
+                            </svg>
+                            <h4 class="text-lg font-semibold text-white">Bases de Datos</h4>
+                        </div>
+                        <p class="text-sm text-gray-400 flex-grow">PostgreSQL, Oracle, MongoDB, SQL.</p>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
+                            <h4 class="text-lg font-semibold text-white">Lenguajes de Programación</h4>
+                        </div>
+                        <p class="text-sm text-gray-400 flex-grow">Java, JavaScript, Python, .NET, PHP.</p>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                            </svg>
+                            <h4 class="text-lg font-semibold text-white">Facilitación y Colaboración</h4>
+                        </div>
+                        <p class="text-sm text-gray-400 flex-grow">Miro, Mural, Facilitación Gráfica, Storytelling.</p>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3H5a2 2 0 00-2 2v4m6-6h6a2 2 0 012 2v4m-6-6v6m0 0v6m0-6H9m3 6H5a2 2 0 01-2-2v-4m6 6h6a2 2 0 002-2v-4m-6 6v-6" />
+                            </svg>
+                            <h4 class="text-lg font-semibold text-white">Inteligencia Artificial</h4>
+                        </div>
+                        <p class="text-sm text-gray-400 flex-grow">Chat GPT, Gemini.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="mb-16">
+                <h3 class="text-2xl font-bold section-title mb-8 border-b-2 border-red-500 pb-2">Experiencia Profesional</h3>
+                <div class="timeline">
+                    <div class="timeline-container left">
+                        <div class="content">
+                            <h4 class="text-xl font-semibold text-white">Manager Agile</h4>
+                            <p class="text-md text-red-400 mb-2">Capitole Consulting (Cliente: Grupo Veolia)</p>
+                            <time class="text-sm font-normal leading-none text-gray-400 block mb-3">Octubre 2023 – Actualidad</time>
+                            <p class="text-base font-normal">Lidero la evolución de 5 equipos de ingeniería, impulsando la adopción de marcos ágiles y definiendo métricas para la mejora continua.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container right">
+                        <div class="content">
+                            <h4 class="text-xl font-semibold text-white">Delivery Manager</h4>
+                            <p class="text-md text-red-400 mb-2">Between Technology (Cliente: Inditex)</p>
+                            <time class="text-sm font-normal leading-none text-gray-400 block mb-3">Septiembre 2022 – Octubre 2023</time>
+                            <p class="text-base font-normal">Dirigí la entrega de una plataforma global de gestión de almacenes, coordinando equipos multidisciplinares (Java, Android, AWS, Kafka).</p>
+                        </div>
+                    </div>
+                     <div class="timeline-container left">
+                        <div class="content">
+                            <h4 class="text-xl font-semibold text-white">Agile Coach</h4>
+                            <p class="text-md text-red-400 mb-2">Contact & Business IT (Cliente: Cámara de Comercio de Bogotá)</p>
+                            <time class="text-sm font-normal leading-none text-gray-400 block mb-3">Octubre 2021 – Diciembre 2024</time>
+                            <p class="text-base font-normal">Diseñé estrategias de adopción ágil y acompañé a directivos y equipos en la implementación de Scrum, Kanban y DevOps.</p>
+                        </div>
+                    </div>
+                     <div class="timeline-container right">
+                        <div class="content">
+                            <h4 class="text-xl font-semibold text-white">Formador en Agilidad</h4>
+                            <p class="text-md text-red-400 mb-2">It&solutions (Remoto)</p>
+                            <time class="text-sm font-normal leading-none text-gray-400 block mb-3">Marzo 2020 – Actualidad</time>
+                            <p class="text-base font-normal">Imparto formación especializada en Scrum Master, Product Owner, Agile Coach y Design Thinking para diversas organizaciones.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container left">
+                        <div class="content">
+                            <h4 class="text-xl font-semibold text-white">Director de Servicios de Tecnología</h4>
+                            <p class="text-md text-red-400 mb-2">Stefanini</p>
+                            <time class="text-sm font-normal leading-none text-gray-400 block mb-3">Agosto 2016 – Enero 2020</time>
+                            <p class="text-base font-normal">Impulsé un crecimiento del 150% en ingresos y reduje la rotación de talento en un 20% liderando un equipo de +300 profesionales.</p>
+                        </div>
+                    </div>
+                     <div class="timeline-container right">
+                        <div class="content">
+                            <h4 class="text-xl font-semibold text-white">Responsable de Proyectos IT / Arquitecto</h4>
+                            <p class="text-md text-red-400 mb-2">Colpensiones</p>
+                            <time class="text-sm font-normal leading-none text-gray-400 block mb-3">Septiembre 2015 – Octubre 2017</time>
+                            <p class="text-base font-normal">Fundé el área de arquitectura, implementé modelos ágiles y coordiné la implantación de DevOps con Jenkins, SonarQube y Selenium.</p>
+                        </div>
+                    </div>
+                     <div class="timeline-container left">
+                        <div class="content">
+                            <h4 class="text-xl font-semibold text-white">Scrum Master / Líder Técnico</h4>
+                            <p class="text-md text-red-400 mb-2">Heinsohn Business Technology</p>
+                            <time class="text-sm font-normal leading-none text-gray-400 block mb-3">Marzo 2012 – Mayo 2015</time>
+                            <p class="text-base font-normal">Lideré equipos de desarrollo en proyectos gubernamentales, diseñé arquitecturas técnicas y facilité la adopción de prácticas ágiles.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section id="education">
+                 <h3 class="text-2xl font-bold section-title mb-8 border-b-2 border-red-500 pb-2">Educación y Certificaciones</h3>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg flex flex-col sm:flex-row items-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="flex-shrink-0 mb-4 sm:mb-0 sm:mr-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-red-400" viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 011.056 0l4 2a1 1 0 001.056 0l4-2a1 1 0 011.056 0l2.606-1.302a1 1 0 000-1.84l-7-3zM3 9.369a1 1 0 000 1.84l7 3.5a1 1 0 00.788 0l7-3.5a1 1 0 000-1.84l-7-3.5a1 1 0 00-.788 0l-7 3.5z" /><path d="M9 17a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" /><path d="M11 10.152l-1 .5a1 1 0 01-1.056 0l-4-2a1 1 0 01-1.056 0L3 8.242a1 1 0 000 1.84l4 2a1 1 0 001.056 0l4-2a1 1 0 000-1.84l-1.744-.872a.999.999 0 00-1.056 0l-1 .5zM12 17a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z" /></svg>
+                        </div>
+                        <div class="text-center sm:text-left">
+                             <h4 class="text-xl font-semibold text-white mb-2">Educación</h4>
+                             <p class="text-lg"><strong>Ingeniero de Informático</strong></p>
+                             <p class="text-gray-400">Fundación del Área Andina, Bogotá (2007)</p>
+                        </div>
+                    </div>
+                     <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 2a1 1 0 00-1 1v1.618A5.002 5.002 0 004 8v11a1 1 0 102 0V8a3 3 0 013-3h2a3 3 0 013 3v11a1 1 0 102 0V8a5.002 5.002 0 00-5-5.382V3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                            <h4 class="text-xl font-semibold text-white">Certificaciones</h4>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 pl-2">
+                            <li>SAFe Agilist (2017)</li>
+                            <li>Agile Scrum Product Owner (2023)</li>
+                            <li>Scrum Máster Accredited (2017)</li>
+                            <li>Management 3.0 (2019)</li>
+                        </ul>
+                     </div>
+                 </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-16 pt-8 border-t border-gray-800">
+            <p class="text-gray-500">Erwin Rene Ome Bermeo | CV Profesional &copy; 2024</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
